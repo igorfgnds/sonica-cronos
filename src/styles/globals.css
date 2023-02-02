@@ -1,0 +1,46 @@
+/* 
+ * CSS Globals
+ * Developed by Igor Fagundes (@igorfgnds)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #050505;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.floating {
+  animation: floating 7s ease-in-out infinite;
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }    
+}

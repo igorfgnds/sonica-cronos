@@ -1,0 +1,44 @@
+.btn {
+  padding: 30px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.primary {
+  position: relative;
+  transition: .2s;
+  background: linear-gradient(95deg, #FFFFFF 0%, #FFFFFF80 100%);
+}
+
+.primary:before {
+  content: "→";
+  top: 0;
+  right: 50px;
+  opacity: 0;
+  width: 40px;
+  height: 100%;
+  font-size: 45px;
+  transition: .2s;
+  line-height: 75px;
+  position: absolute;
+}
+  
+.primary:hover {
+  text-indent: -60px;
+}
+
+.primary:hover:before {
+  opacity: 1;
+  text-indent: 30px;
+}
+
+.secondary {
+  transition: .2s;
+  color: #FFFFFF;
+}
+
+.secondary:hover {
+  text-indent: 30px;
+}
